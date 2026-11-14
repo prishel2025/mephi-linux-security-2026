@@ -71,3 +71,23 @@
 | [sudoers](sudoers) | Настройки sudo |
 
 > Поля паролей в копии shadow заменены на REDACTED. Исходные хеши паролей не опубликованы.
+## Снимки выполнения по разделам
+
+### 1. Пользователь и срок пароля
+![Пользователь user1 и срок пароля 90 дней](screenshots/01-user.png)
+
+### 2. Мониторинг файлов и процессов
+Сохранённые результаты поиска:
+![Мониторинг](screenshots/02-monitoring.png)
+
+### 3. Механизм set-UID
+Отказ без set-UID и успешное чтение после его включения:
+![Проверка set-UID](screenshots/03-setuid.png)
+
+### 4. Linux capabilities
+Изменение владельца файла с привилегией cap_chown:
+![Проверка capabilities](screenshots/04-capabilities.png)
+
+### 5. Механизм sudo
+Разрешение на запуск date и проверка от имени user1:
+![Проверка sudo](screenshots/05-sudo.png)
